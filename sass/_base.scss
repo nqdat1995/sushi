@@ -1,0 +1,15 @@
+body {
+  background-color: $blue;
+  font-family: $font;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1;
+  columns: white;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.container {
+  max-width: 1328px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
