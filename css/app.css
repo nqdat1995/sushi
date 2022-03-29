@@ -152,6 +152,7 @@ body {
 
 .link {
   color: white;
+  cursor: pointer;
 }
 
 .header__main {
@@ -192,6 +193,57 @@ body {
   .header__icons .icon__toggle {
     display: initial;
   }
+}
+.menu {
+  background: url(../images/img2.png) no-repeat center center;
+  height: auto;
+}
+.menu__main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 188px;
+}
+.menu__heading {
+  font-size: 64px;
+  font-weight: bold;
+  margin-top: 94px;
+  margin-bottom: 46px;
+  color: white;
+}
+.menu__desc {
+  max-width: 720px;
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 76px;
+  color: white;
+}
+.menu__items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0 136px;
+  margin-bottom: 128px;
+}
+.menu__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+}
+.menu__item__img {
+  width: 240px;
+  margin-bottom: 26px;
+}
+.menu__item__title {
+  font-size: 28px;
+  font-weight: bold;
+}
+.menu__item__desc {
+  text-align: center;
+  width: 240px;
+  font-size: 17px;
 }
 
 /*# sourceMappingURL=app.css.map */
