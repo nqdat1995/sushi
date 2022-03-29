@@ -159,6 +159,7 @@ body {
 }
 .title-md {
   font-size: 75px;
+  color: #21243d;
 }
 .title-sm {
   font-size: 64px;
@@ -374,6 +375,36 @@ body {
   }
   .menu__item__desc {
     width: 50%;
+  }
+}
+.adsst {
+  background: #ffd17e url(../images/img6.png) no-repeat center center;
+}
+.adsst__main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 192px 0 144px;
+}
+.adsst__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.adsst__content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.adsst__heading {
+  margin-bottom: 60px;
+}
+.adsst__desc {
+  margin-bottom: 75px;
+  color: #21243d;
+}
+@media screen and (max-width: 1023px) {
+  .adsst__main {
+    grid-template-columns: 1fr;
   }
 }
 
