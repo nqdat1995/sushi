@@ -150,8 +150,44 @@ body {
   padding: 0 15px;
 }
 
+.title {
+  font-weight: bold;
+  color: white;
+}
+.title-lg {
+  font-size: 124px;
+}
+.title-md {
+  font-size: 75px;
+}
+.title-sm {
+  font-size: 64px;
+}
+.title-xs {
+  font-size: 28px;
+}
+
 .text {
   color: white;
+}
+.text-xl {
+  font-size: 42px;
+}
+.text-lg {
+  font-size: 30px;
+}
+.text-md {
+  font-size: 26px;
+}
+.text-sm {
+  font-size: 24px;
+}
+.text-xs {
+  font-size: 16px;
+}
+
+.link {
+  cursor: pointer;
 }
 
 .btn {
@@ -169,6 +205,41 @@ body {
   .btn {
     font-size: 12px;
     padding: 16px 32px;
+  }
+
+  .title-lg {
+    font-size: 62px;
+  }
+  .title-md {
+    font-size: 38px;
+  }
+  .title-sm {
+    font-size: 32px;
+  }
+  .title-xs {
+    font-size: 24px;
+  }
+  .title-xxs {
+    font-size: 14px;
+  }
+
+  .text {
+    color: white;
+  }
+  .text-xl {
+    font-size: 22px;
+  }
+  .text-lg {
+    font-size: 16px;
+  }
+  .text-md {
+    font-size: 14px;
+  }
+  .text-sm {
+    font-size: 12px;
+  }
+  .text-xs {
+    font-size: 8px;
   }
 }
 .header__main {
@@ -217,13 +288,10 @@ body {
   padding: 170px 0 156px;
 }
 .hero__title {
-  font-size: 124px;
-  font-weight: bold;
   margin-bottom: 80px;
 }
 .hero__desc {
   max-width: 50%;
-  font-size: 30px;
   margin-bottom: 52px;
   word-wrap: break-word;
 }
@@ -237,13 +305,75 @@ body {
     padding: 70px 0 56px;
   }
   .hero__title {
-    font-size: 62px;
     margin-bottom: 40px;
   }
   .hero__desc {
     max-width: 100%;
-    font-size: 16px;
     margin-bottom: 26px;
+  }
+}
+
+.menu {
+  background: url(../images/img2.png) no-repeat center center;
+  height: auto;
+}
+.menu__main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 188px;
+}
+.menu__heading {
+  margin-top: 94px;
+  margin-bottom: 46px;
+}
+.menu__desc {
+  max-width: 720px;
+  text-align: center;
+  margin-bottom: 76px;
+}
+.menu__items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0 6vw;
+  margin-bottom: 128px;
+}
+.menu__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.menu__item__img {
+  width: 240px;
+  margin-bottom: 26px;
+}
+.menu__item__title {
+  margin-bottom: 32px;
+}
+.menu__item__desc {
+  text-align: center;
+  width: 300px;
+}
+@media screen and (max-width: 1023px) {
+  .menu__main {
+    margin: 0;
+  }
+  .menu__items {
+    grid-template-columns: 1fr;
+    gap: 68px 0;
+    margin-bottom: 68px;
+  }
+  .menu__heading {
+    margin-top: 50px;
+    margin-bottom: 36px;
+  }
+  .menu__desc {
+    margin-bottom: 38px;
+  }
+  .menu__item__desc {
+    width: 50%;
   }
 }
 

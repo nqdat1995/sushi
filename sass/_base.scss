@@ -13,8 +13,42 @@ body {
   margin: 0 auto;
   padding: 0 15px;
 }
+.title {
+  font-weight: bold;
+  color: white;
+  &-lg {
+    font-size: 124px;
+  }
+  &-md {
+    font-size: 75px;
+  }
+  &-sm {
+    font-size: 64px;
+  }
+  &-xs {
+    font-size: 28px;
+  }
+}
 .text {
   color: white;
+  &-xl {
+    font-size: 42px;
+  }
+  &-lg {
+    font-size: 30px;
+  }
+  &-md {
+    font-size: 26px;
+  }
+  &-sm {
+    font-size: 24px;
+  }
+  &-xs {
+    font-size: 16px;
+  }
+}
+.link {
+  cursor: pointer;
 }
 .btn {
   width: fit-content;
@@ -31,5 +65,40 @@ body {
   .btn {
     font-size: 12px;
     padding: 16px 32px;
+  }
+  .title {
+    &-lg {
+      font-size: 62px;
+    }
+    &-md {
+      font-size: 38px;
+    }
+    &-sm {
+      font-size: 32px;
+    }
+    &-xs {
+      font-size: 24px;
+    }
+    &-xxs {
+      font-size: 14px;
+    }
+  }
+  .text {
+    color: white;
+    &-xl {
+      font-size: 22px;
+    }
+    &-lg {
+      font-size: 16px;
+    }
+    &-md {
+      font-size: 14px;
+    }
+    &-sm {
+      font-size: 12px;
+    }
+    &-xs {
+      font-size: 8px;
+    }
   }
 }
