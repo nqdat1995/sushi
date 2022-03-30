@@ -1,0 +1,27 @@
+.client {
+  padding: 145px 0 140px;
+  background: url(../images/img10.png);
+  &__main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  &__img {
+    margin-bottom: 46px;
+  }
+  &__comment {
+    text-align: center;
+    margin-bottom: 52px;
+  }
+  &__name {
+    font-size: 45px;
+  }
+
+  @include maxw(767px) {
+    padding: 100px 0 70px;
+    &__name {
+      font-size: 26px;
+    }
+  }
+}
