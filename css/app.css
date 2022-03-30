@@ -204,7 +204,7 @@ body {
 
 @media screen and (max-width: 767px) {
   .btn {
-    font-size: 12px;
+    font-size: 16px;
     padding: 16px 32px;
   }
 
@@ -514,6 +514,75 @@ body {
   }
   .client__name {
     font-size: 26px;
+  }
+}
+
+.subscribe {
+  padding: 100px 0 200px;
+  background: #ffd17e url(../images/img12.png) no-repeat center center;
+}
+.subscribe__main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.subscribe__heading {
+  margin-bottom: 64px;
+  color: #21243d;
+}
+.subscribe__desc {
+  margin-bottom: 82px;
+  width: 80%;
+  text-align: center;
+  color: #21243d;
+}
+.subscribe__form {
+  min-width: 50%;
+  position: relative;
+}
+.subscribe__form__input {
+  width: 100%;
+  font-size: 25px;
+  padding: 24px 0;
+  padding-left: 20px;
+  border: 0;
+  border-radius: 100px;
+  transform: translateX(-10px);
+}
+.subscribe__form__input:focus {
+  outline: none;
+}
+.subscribe__form__button {
+  padding: 26px 36px;
+  position: absolute;
+  right: -10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+@media screen and (max-width: 1023px) {
+  .subscribe__desc {
+    width: 100%;
+  }
+  .subscribe__form {
+    min-width: 80%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .subscribe {
+    padding: 100px 0;
+  }
+  .subscribe__form__input {
+    font-size: 12px;
+    padding: 16px 0;
+    padding-left: 20px;
+  }
+  .subscribe__form__button {
+    padding: 16px 16px;
+    position: absolute;
+    right: -10px;
+    top: 50%;
+    transform: translateY(-50%);
   }
 }
 
