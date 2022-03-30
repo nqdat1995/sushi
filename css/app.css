@@ -221,7 +221,7 @@ body {
     font-size: 24px;
   }
   .title-xxs {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .text {
@@ -240,7 +240,7 @@ body {
     font-size: 12px;
   }
   .text-xs {
-    font-size: 8px;
+    font-size: 10px;
   }
 }
 .header__main {
@@ -542,10 +542,9 @@ body {
   position: relative;
 }
 .subscribe__form__input {
-  width: 100%;
+  width: 65%;
   font-size: 25px;
-  padding: 24px 0;
-  padding-left: 20px;
+  padding: 24px 30% 24px 5%;
   border: 0;
   border-radius: 100px;
   transform: translateX(-10px);
@@ -565,7 +564,7 @@ body {
     width: 100%;
   }
   .subscribe__form {
-    min-width: 80%;
+    min-width: 90%;
   }
 }
 @media screen and (max-width: 767px) {
@@ -574,8 +573,7 @@ body {
   }
   .subscribe__form__input {
     font-size: 12px;
-    padding: 16px 0;
-    padding-left: 20px;
+    padding: 16px 30% 16px 5%;
   }
   .subscribe__form__button {
     padding: 16px 16px;
@@ -583,6 +581,64 @@ body {
     right: -10px;
     top: 50%;
     transform: translateY(-50%);
+  }
+}
+
+.footer {
+  padding: 250px 0;
+  font-size: 24px;
+}
+.footer ul li {
+  margin-bottom: 24px;
+}
+.footer h3 {
+  font-size: 32px;
+  margin-bottom: 42px;
+}
+.footer__main {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+}
+.footer__items {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.footer__social .social__heading {
+  margin-bottom: 42px;
+  font-size: 42px;
+}
+.footer__social .social__desc {
+  max-width: 90%;
+  margin-bottom: 40px;
+}
+.footer__social .social__icons ul {
+  display: flex;
+  gap: 0 18px;
+}
+@media screen and (max-width: 1023px) {
+  .footer {
+    text-align: center;
+  }
+  .footer__main {
+    grid-template-columns: 1fr;
+    gap: 50px 0;
+  }
+  .footer__social .social__desc {
+    max-width: 100%;
+  }
+  .footer__social .social__icons ul {
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 767px) {
+  .footer {
+    padding: 100px 0;
+    font-size: 16px;
+  }
+  .footer__items {
+    grid-template-columns: 1fr;
+    gap: 50px 0;
   }
 }
 
